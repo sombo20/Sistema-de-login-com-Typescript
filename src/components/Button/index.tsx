@@ -1,18 +1,18 @@
-interface btnInfo{
-  Text:string,
-  onclick:void,
-  Type:string
+interface BTNINFO{
+  text:string,
+  onclick:()=>void,
+  type:string
 }
 
 export default function Button({
-  Text,
+  text,
   onclick,
-  Type="button"
-}):btnInfo{
+  type="button"
+}):BTNINFO{
   return(
     <button
-      type={Type}
+      type={type}
       onClick={onclick}
-     >{Text}</button>
+     >{text}</button>
   )
 }
