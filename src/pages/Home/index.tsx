@@ -16,7 +16,7 @@ function Main(){
   },[])
   
  
-  const handlogout = ()=>{
+  const handLogout = ()=>{
      signout()
     navigate("/")
   }
@@ -26,8 +26,8 @@ function Main(){
      <h1>Home</h1>
      
      <Button
-      Text="Logout"
-      onclick={handlogout}
+      text="Logout"
+      onclick={handLogout}
     />
    
     </>
