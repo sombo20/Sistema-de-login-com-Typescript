@@ -1,8 +1,8 @@
-interface inputInfo{
+interface INPUTINFO{
   type:string,
   placeholder:string,
   value:string,
-  onchange:void,
+  onchange:()=>void,
 }
 
 export default function Input(
@@ -12,7 +12,7 @@ export default function Input(
      value,
      onchange
    }
-  ):inputInfo{
+  ):INPUTINFO{
   return(
     <input
       type={type}
